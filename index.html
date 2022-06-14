@@ -1,0 +1,233 @@
+
+<style>
+
+
+body{
+    background-color:midnightblue;
+}
+    .board{
+    width: 424px;
+    height:424px;
+    border-style:solid;
+    display:inline-flex;
+    float:left;
+    
+}
+
+.one{
+    width:50px;
+    height:50px;
+    border-style:solid;
+    background-color:#D2B48C;
+}
+.two{
+    width:50px;
+    height:50px;
+    border-style:solid;
+    background-color:white;
+}
+
+.a{
+    color:black;
+    margin-top:33px;
+}
+
+.number{
+    color:black;
+    float:right;
+    
+}
+
+
+
+.cer{
+    margin-top:5px;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    
+
+}
+
+
+.whitecer{
+    
+    margin-top:5px;
+    height: 40px;
+    width: 40px;
+    background-color:red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+</style>
+
+<button>Gioca</button>
+<button>Profilo</button>
+<button>Impostazioni</button>
+
+
+<div class="board">
+    
+ 
+    <div>
+        <div class="two"></div>
+        <div class="one"> <div class="whitecer"></div></div>
+        <div class="two"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="one"><div class="cer"></div></div>
+        <div class="two"></div>
+        <div class="one">
+            <div class="cer"></div>
+            
+        </div>
+    </div>
+    <div>
+        <div class="one"> <div class="whitecer"></div></div>
+        <div class="two"></div>
+        <div class="one"> <div class="whitecer"></div></div>
+        <div class="two"></div>
+        <div class="one"></div>
+        <div class="two">
+        </div>
+        <div class="one"><div class="cer"></div></div>
+        <div class="two">
+            <div class="a"></div>
+        </div>
+    </div>
+    <div>
+        <div class="two">
+            
+        </div>
+        <div class="one"> <div class="whitecer"></div></div>
+        <div class="two"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="one"><div class="cer"></div></div>
+        <div class="two"></div>
+        <div class="one">
+            <div class="cer"></div>
+        </div>
+    </div>
+    <div>
+        <div class="one">
+            <div class="whitecer"></div>
+        </div>
+        <div class="two"></div>
+        <div class="one"> <div class="whitecer"></div></div>
+        <div class="two"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="one"><div class="cer"></div></div>
+        <div class="two">
+            <div class="a"></div>
+        </div>
+    </div>
+
+    <div>
+        <div class="two">
+           
+        </div>
+        <div class="one"> <div class="whitecer"></div></div>
+        <div class="two"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="one"><div class="cer"></div></div>
+        <div class="two"></div>
+        <div class="one">
+            <div class="cer"></div>
+        </div>
+    </div>
+    <div>
+        <div class="one">
+            <div class="whitecer"></div>
+        </div>
+        <div class="two"></div>
+        <div class="one"> <div class="whitecer"></div></div>
+        <div class="two"></div>
+        <div class="one" id="sposta"></div>
+        <div class="two"></div>
+        <div class="one">
+            <div class="cer"></div>
+        </div>
+        <div class="two">
+            <div class="a"></div>
+        </div>
+    </div>
+    <div>
+        <div class="two">
+          
+        </div>
+        <div class="one"> <div class="whitecer"></div></div>
+        <div class="two"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="one"><div class="cer" id="primo"></div></div>
+        <div class="two"></div>
+        <div class="one">
+            <div class="cer"></div>
+            
+        </div>
+    </div>
+    <div>
+        <div class="one">
+            <div class="number"> <div class="whitecer"></div></div>
+        </div>
+        <div class="two">
+            <div class="number"></div>
+        </div>
+        <div class="one">
+            <div class="number"> <div class="whitecer"></div></div>
+        </div>
+        <div class="two">
+            <div class="number"></div>
+        </div>
+        <div class="one"id="casa">
+            <div class="number" ></div>
+        </div>
+        <div class="two">
+            <div class="number"></div>
+        </div>
+        <div class="one">
+            <div class="number">
+                <div class="cer"></div>
+            </div>
+        </div>
+       
+        <div class="two">
+            
+            
+            
+        </div>
+    </div>
+    
+
+    
+
+
+</div>
+
+
+<script>
+
+    const btn = document.getElementById("primo");
+    const move = document.getElementById("sposta");
+    const sec = document.getElementById("casa");
+
+    btn.addEventListener("click",function Onclick(){
+        move.style.backgroundColor = 'green';
+        sec.style.backgroundColor = 'green';
+    });
+
+    if(document.getElementById("casa").selected == True){
+        sec.style.backgroundColor = 'none';
+
+    }
+</script>
+
+
+
